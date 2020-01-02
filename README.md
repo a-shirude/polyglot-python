@@ -19,5 +19,5 @@ Application will start running on http://127.0.0.1:5000/
 # how to run api
 Go to browser and hit below links -
 
-http://127.0.0.1:5000/api - Welcome to Flask API demo : Two sided prime number.
-http://127.0.0.1:5000/api/33 - 33 is a number that needs to be checked. Give response {"33 is two sided prime? ":"false"}
+1. http://127.0.0.1:5000/api - Welcome to Flask API demo : Two sided prime number.
+2. http://127.0.0.1:5000/api/33 - '33' is a number that needs to be checked. It will give response {"33 is two sided prime? ":"false"}
