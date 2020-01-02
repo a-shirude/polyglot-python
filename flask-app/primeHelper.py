@@ -1,3 +1,4 @@
+# hepler to check if given number is prime
 def isPrime(n): 
       
     # Corner case 
@@ -11,8 +12,8 @@ def isPrime(n):
   
     return True   
 
-def power(x, y) : 
-      
+# helper function to calculate power of an integer
+def power(x, y) :  
     if (y == 0) : 
         return 1
     elif (y % 2 == 0) : 
@@ -22,8 +23,8 @@ def power(x, y) :
         return(x * power(x, y // 2) *
                 power(x, y // 2))
 
+# checks right truncatable prime number
 def rightTruPrime(n) :
-
     while (n != 0) : 
         if (isPrime(n)) : 
             n = n // 10     
@@ -32,24 +33,20 @@ def rightTruPrime(n) :
       
     return True
 
+# checks left trunacatable prime number
 def leftTruPrime(n) : 
-
     temp = n 
     cnt = 0
   
     while (temp != 0) : 
-           
         cnt=cnt + 1 
-          
         temp1 = temp % 10  
         if (temp1 == 0) : 
             return False 
           
         temp = temp // 10
         
-     
     for i in range(cnt, 0, -1) : 
-        
         mod = power(10, i)  
         if (isPrime(n % mod) != True) :  
             return False 
